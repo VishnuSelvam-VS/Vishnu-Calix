@@ -1,0 +1,28 @@
+🚀 Starting Vishnu Calix API Tests...
+==================================================
+✅ PASSED - Root API Endpoint
+   Details: Status: 200, Expected: 200
+✅ PASSED - User Registration
+   Details: Status: 200, Expected: 200
+✅ PASSED - Get User Profile
+   Details: Status: 200, Expected: 200
+✅ PASSED - Fitness Calculation
+   Details: Status: 200, Expected: 200
+✅ PASSED - Fitness Calculation Response Validation
+   Details: All required fields present
+❌ FAILED - Add Progress Entry
+   Details: Status: 422, Expected: 200, Response: {'detail': [{'type': 'missing', 'loc': ['body', 'user_id'], 'msg': 'Field required', 'input': {'weight': 72.5, 'notes': 'Test progress entry'}, 'url': 'https://errors.pydantic.dev/2.12/v/missing'}]}
+✅ PASSED - Get Progress History
+   Details: Status: 200, Expected: 200
+
+🤖 Testing AI Features (may take 10-30 seconds)...
+❌ FAILED - AI Chat Message
+   Details: Exception: HTTPSConnectionPool(host='calisthenics-ai-1.preview.emergentagent.com', port=443): Read timed out. (read timeout=30)
+❌ FAILED - Generate Workout Plan
+   Details: Exception: HTTPSConnectionPool(host='calisthenics-ai-1.preview.emergentagent.com', port=443): Read timed out. (read timeout=30)
+✅ PASSED - List Workout Plans
+   Details: Status: 200, Expected: 200
+❌ FAILED - Generate Diet Plan
+   Details: Exception: HTTPSConnectionPool(host='calisthenics-ai-1.preview.emergentagent.com', port=443): Read timed out. (read timeout=30)
+❌ FAILED - List Diet Plans
+   Details: Exception: HTTPSConnectionPool(host='calisthenics-ai-1.preview.emergentagent.com', port=443): Read timed out. (read timeout=30)
