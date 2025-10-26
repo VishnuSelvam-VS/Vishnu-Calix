@@ -1,4 +1,4 @@
-Voshnu Calix
+Vishnu Calix
 
 This repository contains the project files from the VS Code preview workspace.
 
